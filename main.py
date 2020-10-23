@@ -12,6 +12,11 @@ try:
 except:
     missing = missing + '- PythonScanner'
     critical = True
+try:
+    from Modules.vbscan import vbscan as vs
+except:
+    missing = missing + '- Vbscan'
+    critical = True
 
 if critical == True:
     print("Missing modules : %s" % missing)
@@ -25,6 +30,8 @@ while True:
             sb(file)
         if '.py' in file:
             ps(file)
+        if '.vbs' in file:
+            vs(file)
         else:
             print("uknown format")
     else:
