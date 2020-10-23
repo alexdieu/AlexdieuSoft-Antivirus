@@ -1,5 +1,5 @@
 # AlexdieuSoft-Antivirus
-Antivirus thats actually only scans .py and .bat files
+Antivirus thats actually only scans .py, .vbs and .bat files (python3)
 
 This is basically a simple antivirus written in python
 
