@@ -1,4 +1,5 @@
 import os.path as pt
+import sys
 
 critical = False
 missing = ''
@@ -23,8 +24,18 @@ if critical == True:
 
 print("Antivirus by AlexdieuSoft")
 
+if len(sys.argv) > 1:
+    file = sys.argv[1]
+    out = False
+else:
+    pass
+    out = True
+
 while True:
-    file = input("File to inspect >>>")
+    if out == True:
+        file = input("File to inspect >>>")
+    else:
+        out = True
     if pt.isfile(file):
         if '.bat' in file:
             sb(file)
@@ -33,6 +44,6 @@ while True:
         if '.vbs' in file:
             vs(file)
         else:
-            print("uknown format")
+            print("Uknown format for the file : " + file)
     else:
-        print("File doesn't exist")
+        print("The file "+ file +" doesn't exist")

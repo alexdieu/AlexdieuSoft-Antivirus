@@ -1,6 +1,6 @@
 import time as t
 
-malicious = ("startup","os.path.abspath","os.remove","os.unlink","file_path.unlink","glob.glob","unlink","rmdir","rmtree","abspath","glob","sysRoot","RANSOM","expanduser","os.rename","infect","root","target","msvcrt.getwch","keyboardDisable","sys.stdout","taskkill","os.kill","system32","password","itertools.product","crack","range(1000000","sleep(100000","smtplib","hack",".dll",".com","webhook","api","upload","shutdown","admin","root","crypt")
+malicious = ("reg","HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows","cmd","open","getcwd","startup","os.path.abspath","os.remove","os.unlink","file_path.unlink","glob.glob","unlink","rmdir","rmtree","abspath","glob","sysRoot","RANSOM","expanduser","os.rename","infect","root","target","msvcrt.getwch","keyboardDisable","sys.stdout","taskkill","os.kill","system32","password","itertools.product","crack","range(1000000","sleep(100000","smtplib","hack",".dll",".com","webhook","api","upload","shutdown","admin","root","crypt")
 
 def scanpy(filename):
     detection = False
