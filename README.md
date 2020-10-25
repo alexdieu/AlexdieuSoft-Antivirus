@@ -6,3 +6,5 @@ This is basically a simple antivirus written in python
 SUPPORT :
 
 BATCH FILES , PYTHON FILES , AND VBS 
+
+REQUIRED MODULES : NONE (except default lib of python (os sys and io) + tkinter for the gui)
