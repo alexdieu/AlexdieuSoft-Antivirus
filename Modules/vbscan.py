@@ -26,5 +26,5 @@ def vbscan(filename):
     if detection == True:
         print("Virus detected !")
     else:
-        print("No virus detected (you should just lookup it to see if everything is normal in or may be you trust the guy who gived you this .bat)")
+        print("No virus detected (you should just lookup it to see if everything is normal in or may be you trust the guy who gived you this .vbs)")
         t.sleep(5)
