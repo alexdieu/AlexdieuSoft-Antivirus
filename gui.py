@@ -43,6 +43,7 @@ else:
 
 
 def scan():
+    out = False
     v = io.StringIO()
     file = getInputBoxValue()
     if pt.isfile(file):
